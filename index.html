@@ -1,0 +1,822 @@
+<?php
+
+
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="floating-wpp.min.css">
+
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+
+    /* Remove the jumbotron's default bottom margin */
+    .jumbotron {
+      margin-bottom: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      /* background-color: #f2f2f2; */
+      background-color:#D4BD45;
+      padding: 25px;
+    }
+
+    .fa {
+      padding: 20px;
+      font-size: 50px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      /* border-radius: 50%; */
+    }
+
+
+
+
+
+
+
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-youtube-play {
+      background: #bb0000;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+    body{
+      background-color:#0C1033;
+      color:white;
+    }
+
+
+
+
+
+    img{
+  display:flex;
+  flex-wrap: wrap;
+  width:calc(100% - 0px - 0px - 0px - 0px);
+  height:400px;
+
+}
+
+    
+    @media (max-width:952px){
+  img{
+  display:flex;
+  flex-wrap: wrap;
+  width:calc(100% - 0px - 0px - 0px - 0px);
+  height:180px;
+  /* height:1024px;
+  width:3024px */
+}
+
+}
+
+
+@media (max-width:952px){
+ h4{
+   font-size:13px;
+  
+  /* height:1024px;
+  width:3024px */
+}
+
+}
+
+@media (max-width:952px){
+
+  nav ul li a {
+    font-size:12px;
+  }
+
+
+}
+
+
+
+
+
+
+  </style>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- External style css  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Online Store</h1>
+      <p>Mission, Vission & Values</p>
+    </div>
+  </div> -->
+
+
+  <img   src="banner-image/banner.jpg" alt=""  > 
+
+
+
+
+  <nav class="navbar navbar-inverse">
+    <!-- <div class="container-fluid"> -->
+
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#">Logo</a> -->
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <!-- navbar center ===>style.css  -->
+        <ul class="nav navbar-nav navbar-center">
+          <li class="active"><a href="/navbar/index.php">HOME</a></li>
+          <li><a href="/navbar/about.php">ABOUT </a></li>
+
+          <!-- Wedding ropdown -->
+
+
+          <!-- <li class="dropdown"><a class="data-toggle" href="#">WEDDING</a></li> -->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WEDDING <span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/navbar/holud-stage.php">HOLUD DECOR & IDEAS</a></li>
+              <li class="divider"></li>
+              <li><a href="/navbar/wedding-stage.php">WEDDING STAGE</a></li>
+              <li class="divider"></li>
+              <li><a href="/navbar/wedding-kunjo.php">WEDDING KUNJO</a></li>
+              <!-- <li class="divider"></li>
+              <li><a href="#">ROYAL THEME WEDDING <br> STAGE DESIGN</a></li> -->
+              <li class="divider"></li>
+              <li><a href="/navbar/wedding-photography.php">WEDDING PHOTOGRAPY</a></li>
+            </ul>
+          </li>
+
+
+          <!-- Birthday dropdown menu  -->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">BIRTHDAY <span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/navbar/birthday-decor-theme.php">BIRTHDAY DECOR THEME</a></li>
+              <li class="divider"></li>
+              <li><a href="/navbar/birthday-photography.php">BIRTHDAY PHOTOGRAPY</a></li>
+              <!-- <li class="divider"></li>
+              <li><a href="#">BIRTHDAY GAMES & <br> ACTIVITIES</a></li> -->
+            </ul>
+          </li>
+
+          <!-- Rental Equipment dropdown menu -->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">RENTAL EQUIPMENT<span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="/navbar/sound-system.php">SOUND SYSTEM</a></li>
+            <li class="divider"></li>
+            <li><a href="/navbar/dj.php">DJ (DISC JOCKEY)</a></li>
+
+            </ul>
+          </li>
+
+          <!-- Price & Package Dropdown Menu -->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PRICE & PACKAGE <span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">WEDDING PHOTOGRAPHY <br> PRICE</a></li>
+              <li class="divider"></li>
+              <li><a href="#">EVENT PHOTOGRAPHY <br> PRICE</a></li>
+              <li class="divider"></li>
+              <li><a href="#">HD VIDEO PRICE</a></li>
+            </ul>
+          </li>
+
+          <!-- Other Site  -->
+
+          <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">OTHER SITE <span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">WEDDING PLANNER <br> BANGLADESH </a></li>
+              <li class="divider"></li>
+              <li><a href="#">BIRTHDAY PARTY <br> PLANNER DHAKA,BD</a></li>
+              <li class="divider"></li>
+              <li><a href="#">EVENT MANAGEMENT <br> BANGLADESH </a></li>
+            </ul>
+          </li> -->
+
+          <!-- contact page  -->
+
+
+          <li><a href="/navbar/contact.php">CONTACT </a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- carousel-caption -->
+
+  <div class="container-fluid">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <!-- <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image"> -->
+          <img src="slider-images/img1.jpg" alt="Image">
+
+          <div class="carousel-caption">
+            <h3>Sell $</h3>
+            <p>Money Money.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="slider-images/img2.jpg" alt="Image">
+          <div class="carousel-caption">
+            <h3>More Sell $</h3>
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+
+  <!-- Who We Are  -->
+
+
+  <div class="container text-center">
+    <h3>WHO WE ARE</h3>
+    <p><em>We love music!</em></p>
+
+    <div class="panel panel-default">
+    <div class="panel-body">
+
+
+    <p class="text-justify" style="color:black">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, voluptatum veniam explicabo
+      esse animi quasi deleniti repudiandae odio obcaecati, ipsa velit aliquid earum dolorem provident suscipit modi
+      distinctio nemo numquam quas? Rem sequi voluptatem dicta nobis, harum veniam similique quibusdam voluptatum nisi
+      perspiciatis, laboriosam earum id culpa quo sunt praesentium veritatis enim beatae perferendis consectetur! Nihil
+      qui dolor sit voluptatibus animi autem quo, suscipit maiores quis! Sit repellat libero dolore consequatur, alias
+      ratione officia rem eos suscipit quas molestiae iure sed hic pariatur officiis fuga fugiat, praesentium ipsam in
+      earum. Debitis voluptatum distinctio ipsam dolores provident earum pariatur atque.
+    </p>
+
+    </div>
+    </div>
+    
+    <br>
+  </div>
+    <!-- <div class="row">
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Name</strong></p><br>
+        <a href="#demo" data-toggle="collapse">
+          <img src="https://placehold.it/255x255?text=IMAGE" class="img-circle person" alt="Random Name" width="255"
+            height="255">
+        </a>
+        <div id="demo" class="collapse">
+          <p>Guitarist and Lead Vocalist</p>
+          <p>Loves long walks on the beach</p>
+          <p>Member since 1988</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Name</strong></p><br>
+        <a href="#demo2" data-toggle="collapse">
+          <img src="https://placehold.it/255x255?text=IMAGE" class="img-circle person" alt="Random Name" width="255"
+            height="255">
+        </a>
+        <div id="demo2" class="collapse">
+          <p>Drummer</p>
+          <p>Loves drummin'</p>
+          <p>Member since 1988</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Name</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="https://placehold.it/225x255?text=IMAGE" class="img-circle person" alt="Random Name" width="255"
+            height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+    </div>
+
+  </div> -->
+
+  <br>
+  <br>
+
+
+  <!-- Our Poplour Events Items -->
+
+  <div class="container text-center">
+    <h3>OUR POPLOUR EVENT ITEMS</h3>
+    <p>The .thumbnail class can be used to display an image gallery.</p>
+    <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+    <p>Click on the images to enlarge them.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <!-- <a href="https://placehold.it/300x200?text" target="_blank"> -->
+          <a href="image/img1.jpg" target="_blank">
+            <img src="image/img1.jpg" alt="Lights" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="image/img2.jpg" target="_blank">
+            <img src="image/img2.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="image/img1.jpg" target="_blank">
+            <img src="image/img1.jpg" alt="Fjords" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="image/img2.jpg" target="_blank">
+            <img src="image/img2.jpg" alt="Lights" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="image/img1.jpg" target="_blank">
+            <img src="image/img1.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="image/img2.jpg" target="_blank">
+            <img src="image/img2.jpg" alt="Fjords" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+<!-- Click to whatsapp chatbox -->
+
+
+<style>
+
+.whatsapp_float{
+  position:fixed;
+  right:30px;
+  bottom:60px;
+  
+}
+
+
+</style> 
+<div class="whatsapp_float">
+<a href="https://wa.me/8801867384440?text=I'm%20interested%20in%20your%20car%20for%20sale" >
+<!-- <img src="whatsapp/whatsapp.png" width="50px"  alt="" class="" > -->
+<i class="fa fa-whatsapp" style="font-size:50px;color:white;background-color:#13E801;padding:2px; outline: none;
+cursor: pointer;border-radius:10px" aria-hidden="true"></i>
+</a>
+</div>
+
+
+  <!-- <script>
+
+$(function(){
+  $('#myDiv').floatingWhatsApp({
+    phone:"8801867384440",
+    showPopup:"true",
+  })
+})
+
+  </script> -->
+
+
+
+
+
+
+
+
+
+
+  <!-- Scroll to top function  -->
+
+
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  /* bottom: 20px; */
+  bottom:100px;
+  /* right: 30px; */
+  right:5px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+;
+}
+</style>
+
+
+
+ <i class="fa fa-arrow-circle-up" onclick="topFunction()" id="myBtn"></i>
+
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script> 
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Call Us For Fast Booking  -->
+
+
+
+
+  <!-- <div class="container">
+    <div class="well well-lg">
+      <h3 class="text-center"><strong>Call Us:01867384440</strong></h3>
+    </div>
+  </div> -->
+
+
+
+  <!-- Our Recents Events -->
+
+  <!-- <div class="container text-center">
+
+    <h2>OUR RECENTS EVENTS</h2>
+
+    <p>The .thumbnail class can be used to display an image gallery.</p>
+    <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+    <p>Click on the images to enlarge them.</p>
+
+
+    <div class="row">
+ 
+
+      <div class="col-md-4">
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="embed-responsive embed-responsive-16by9 ">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RVLNBVK8auM"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="embed-responsive embed-responsive-16by9 ">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RVLNBVK8auM"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="embed-responsive embed-responsive-16by9 ">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RVLNBVK8auM"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+-->
+
+
+
+  <!-- Our Event Photo Portfoilo -->
+
+   <!-- 
+
+  <div class="container text-center">
+    <h2>OUR EVENTS PORTFOILO</h2>
+    <p>The .thumbnail class can be used to display an image gallery.</p>
+    <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+    <p>Click on the images to enlarge them.</p>
+    <div class="row">
+
+
+    
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://placehold.it/708x472?text=IMAGE" target="_blank">
+            <img src="https://placehold.it/708x472?text=IMAGE" alt="Lights" style="width:100%">
+            
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://placehold.it/708x472?text=IMAGE" target="_blank">
+            <img src="https://placehold.it/708x472?text=IMAGE" alt="Lights" style="width:100%">
+            
+          </a>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://placehold.it/708x472?text=IMAGE" target="_blank">
+            <img src="https://placehold.it/708x472?text=IMAGE" alt="Lights" style="width:100%">
+            
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://placehold.it/472x708?text=IMAGE" target="_blank">
+            <img src="https://placehold.it/472x708?text=IMAGE" alt="Lights" style="width:100%">
+            
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://placehold.it/472x708?text=IMAGE" target="_blank">
+            <img src="https://placehold.it/472x708?text=IMAGE" alt="Lights" style="width:100%">
+            
+          </a>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://placehold.it/472x708?text=IMAGE" target="_blank">
+            <img src="https://placehold.it/472x708?text=IMAGE" alt="Lights" style="width:100%">
+            
+          </a>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://placehold.it/708x472?text=IMAGE" target="_blank">
+            <img src="https://placehold.it/708x472?text=IMAGE" alt="Lights" style="width:100%">
+            
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://placehold.it/708x472?text=IMAGE" target="_blank">
+            <img src="https://placehold.it/708x472?text=IMAGE" alt="Lights" style="width:100%">
+            
+          </a>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://placehold.it/708x472?text=IMAGE" target="_blank">
+            <img src="https://placehold.it/708x472?text=IMAGE" alt="Lights" style="width:100%">
+            
+          </a>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br><br>
+
+
+
+
+  <!-- footer -->
+  <footer class="container-fluid">
+
+    <!-- <p class="text-left" >Call Number: <b>01867384440</b></p> -->
+
+
+  
+
+
+    <p class="text-center">
+      <br>
+      <br>
+
+      <b><a href="#" class="fa fa-facebook"></a></b>
+      <b><a href="#" class="fa fa-twitter"></a></b>
+      <b><a href="#" class="fa fa-youtube-play"></a></b>
+      <b><a href="#" class="fa fa-instagram"></a></b>
+    </p>
+    <br>
+    <p class="text-center">All Copyright Reserved 2023</p>
+    <br>
+    <br>
+    <p class="text-right">Made with <a href="https://github.com/r3k4t" target="_blank">
+        <span class="love-symbol"> &#10084</span> <span class="rahatkhantusar">Rahat Khan Tusar</span> <span
+          class="love-symbol"> &#10084</span></a> </p>
+
+
+
+  </footer>
+
+
+</body>
+
+</html>
